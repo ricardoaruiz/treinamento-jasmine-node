@@ -97,3 +97,32 @@ instalarmos o Browserify.
 
     npm run test-dev
     ```
+
+## Browserify
+
+É um framework que converte as chamadas "require" utilizadas no NodeJS para um formato compreensivel pelo navegador
+
+```javascript
+npm install --save-dev browserify
+npm install --save-dev watchify
+npm install --save-dev karma-browserify
+```
+
+Alterar o arquivo "karma.conf.js" conforme os trechos abaixo:
+
+```javascript
+frameworks: ['jasmine', 'browserify'],
+```
+
+```javascript
+files: [
+    'spec/**/*Spec.js',
+    'spec/helpers/**/SpecHelper.js'
+],
+```
+
+```javascript
+preprocessors: {
+    'spec/**/*Spec.js': ['browserify']
+}
+```
