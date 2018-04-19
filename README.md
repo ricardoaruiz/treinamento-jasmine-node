@@ -67,3 +67,13 @@ Responder as perguntas com os seguintes valores:
 - yes
 
 No final será gerado o arquivo karma.conf.js na raiz do projeto com todas as configurações definidas.
+
+## Inicializando o Karma no projeto
+
+```javascript
+karma start
+```
+
+Os testes vão rodar e o karma ficará em modo de escuta.
+Ocorrerá um erro nos testes, pois em um dos testes de exemplo do Jasmine é utilizado o "Require.js" que não é suportado pelos browsers, mas que será resolvido quando
+instalarmos o Browserify.
