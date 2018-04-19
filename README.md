@@ -75,5 +75,25 @@ karma start
 ```
 
 Os testes vão rodar e o karma ficará em modo de escuta.
+
 Ocorrerá um erro nos testes, pois em um dos testes de exemplo do Jasmine é utilizado o "Require.js" que não é suportado pelos browsers, mas que será resolvido quando
 instalarmos o Browserify.
+
+## Executando o Karma com o NodeJS
+
+* Alteramos o arquivo "package.json" no nó scripts da seguinte forma:
+    
+    ```javascript
+    "scripts": {
+        "test-dev": "karma start",
+        "test": "karma start --single-run"
+    },
+    ```
+
+    Para executar os testes rodamos o comando:
+
+    ```javascript
+    npm run test
+
+    npm run test-dev
+    ```
