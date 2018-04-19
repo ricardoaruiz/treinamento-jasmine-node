@@ -42,7 +42,7 @@ Após rodar o comando são criados:
 - pasta **"spec/jasmine_examples"** com testes da implementação exemplo
 - pasta **"spec/helper"** com um comparador customizado como exemplo
 
-##Instalando o Karma no projeto
+## Instalando o Karma no projeto
 
 ```javascript
 npm install --save-dev karma
@@ -54,4 +54,16 @@ npm install --save-dev karma-firefox-launcher
 npm install -g install karma-cli
 ```
 
+## Configurando o Karma no projeto
 
+```javascript
+karma init karma.conf.js
+```
+Responder as perguntas com os seguintes valores:
+- jasmine
+- no
+- Firefox
+- spec/**/*Spec.js
+- yes
+
+No final será gerado o arquivo karma.conf.js na raiz do projeto com todas as configurações definidas.
