@@ -126,3 +126,16 @@ preprocessors: {
     'spec/**/*Spec.js': ['browserify']
 }
 ```
+
+## Integrando o Travis CI no projeto
+
+Criar o arquivo .travis.yml na raiz do projeto com o seguinte conteúdo:
+
+```
+language: node_js
+before_install:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+node_js:
+  - 'node'
+```
