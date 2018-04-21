@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ricardoaruiz/treinamento-jasmine-node.svg?branch=master)](https://travis-ci.org/ricardoaruiz/treinamento-jasmine-node)
+
 ## Instalando o Jasmine no projeto
 
 ```javascript
@@ -139,3 +141,14 @@ before_install:
 node_js:
   - 'node'
 ```
+
+## Adicionando o repositório Github no Travis CI
+
+- Ir até o site https://travis-ci.org/
+- No lado esquerdo "My Repositories", clicar no "+"
+- Encontrar na lista o repositório a ser adicionado e ligar
+- Acessar o repositório adicionado no lado esquerdo "My Repositories"
+- Clicar na imagem "build/unknown" no canto superior direito
+- Será aberta uma tela onde devemos selecionar "Markdown" no segundo combo e copiar o texto
+que será apresentado no campo logo abaixo.
+- Inserir o texto copiado no topo do arquivo README.md do projeto e fazer o commit
